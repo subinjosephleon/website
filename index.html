@@ -30,8 +30,7 @@
           <a href="#" class="active">Home</a>
           <a href="#about">About</a>
           <a href="#cfp">Call for Papers</a>
-          <a href="#cfp">Themes</a>
-          <a href="#cfp">Workshops</a>
+          <a href="#themes">Themes</a>
           <a href="#dates">Important Dates</a>
           <a href="#speakers">Speakers</a>
           <a href="#venue">Venue</a>
@@ -58,12 +57,12 @@
     <section class="hero" aria-label="Conference hero banner">
 
       <!-- Background with fallbacks -->
-      <div class="hero-bg" role="img" aria-label="Madurai heritage and architectural landscape">
+      <div class="hero-bg" role="img" aria-label="VLSI, Intelligent Signal Processing and Communication Technology Network">
         <img
-          src="images/hero/madurai-hero.jpg"
-          alt="Madurai — City of Temples and Culture, venue of VISCOM 2026"
+          src="images/hero/viscom-hero.jpg"
+          alt="VISCOM 2026 — VLSI, Intelligence Signal Processing and Communication"
           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"
-          onerror="this.src='images/hero/kolkata-hero.jpg'"
+          onerror="this.style.display='none'"
           fetchpriority="high"
         >
       </div>
@@ -191,7 +190,7 @@
           <div class="about-visual" aria-hidden="true">
             <div class="about-image-block">
               <img src="images/venue/tce-campus.jpg" alt="Thiagarajar College of Engineering Campus, Madurai"
-                   onerror="this.src='images/venue/isi-main.jpg'">
+                   onerror="this.style.display='none'">
             </div>
 
             <div class="organizers-strip">
@@ -509,7 +508,7 @@
             <img
               src="images/venue/tce-campus.jpg"
               alt="Thiagarajar College of Engineering Campus, Madurai — VISCOM 2026 Venue"
-              onerror="this.src='images/venue/iit-research-park.jpg'"
+              onerror="this.style.display='none'"
             >
             <div class="venue-map-badge" aria-label="Location">
               <strong>Conference Venue</strong>
@@ -577,110 +576,90 @@
 
 
     <!-- ================================================
-         10. DISCOVER MADURAI
+         10. CONFERENCE THEMES & TRACKS
     ================================================ -->
-    <section class="kolkata-section section-pad" id="madurai" aria-labelledby="madurai-heading">
+    <section class="themes-section section-pad" id="themes" aria-labelledby="themes-heading">
       <div class="container">
 
-        <header class="kolkata-header">
-          <span class="section-label">The Cultural Capital of Tamil Nadu</span>
-          <h2 class="section-title" id="madurai-heading">Discover <strong>Madurai</strong></h2>
+        <header class="themes-header">
+          <span class="section-label">Core Technical Scope</span>
+          <h2 class="section-title" id="themes-heading">Conference <strong>Themes &amp; Tracks</strong></h2>
           <p class="section-lead" style="margin:12px auto 0; text-align:center;">
-            Known as the Athens of the East and the Temple City, Madurai is one of the world's oldest continuously inhabited cities, celebrated for its legendary architecture, rich Dravidian heritage, and warm hospitality.
+            VISCOM 2026 focuses on three foundational and synergistic technical pillars driving modern electronics, artificial intelligence, and global connectivity.
           </p>
         </header>
 
-        <div class="kolkata-grid" role="list" aria-label="Madurai landmarks">
+        <div class="themes-grid" role="list" aria-label="VISCOM 2026 Core Themes">
 
-          <!-- Meenakshi Amman Temple — large card -->
-          <article class="kolkata-card" role="listitem" aria-label="Meenakshi Amman Temple, Madurai">
-            <div class="kolkata-card-bg kolkata-victoria"
-                 style="background-image: url('images/madurai/meenakshi-temple.jpg');"
-                 role="img" aria-label="Meenakshi Amman Temple Gopuram">
+          <!-- Theme 1: VLSI -->
+          <article class="theme-card" role="listitem" aria-label="Theme 1: VLSI Systems & Nanotechnology">
+            <div class="theme-card-image">
               <img
-                src="images/madurai/meenakshi-temple.jpg"
-                alt="Meenakshi Amman Temple"
-                style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
-                onerror="this.src='images/kolkata/victoria-memorial.jpg'"
-                aria-hidden="true"
+                src="images/themes/vlsi-chip.jpg"
+                alt="VLSI & Semiconductor Chip Technology"
+                onerror="this.style.display='none'"
               >
+              <span class="theme-badge">Theme 01</span>
             </div>
-            <div class="kolkata-card-overlay" aria-hidden="true"></div>
-            <div class="kolkata-card-content">
-              <h3 class="kolkata-card-title">Meenakshi Amman Temple</h3>
-              <p class="kolkata-card-subtitle">Architectural Marvel of 14 Towers · 2,500+ Years Legacy</p>
+            <div class="theme-card-content">
+              <h3 class="theme-card-title">VLSI Systems &amp; Semiconductor Design</h3>
+              <p class="theme-card-desc">
+                Encompassing microelectronics, 3D heterogenous packaging, low-power integrated circuits, neuromorphic hardware accelerators, System-on-Chip (SoC), and cryptographic security circuits.
+              </p>
+              <ul class="theme-topics-list" aria-label="VLSI Highlights">
+                <li>Analog, Digital &amp; Mixed-Signal VLSI</li>
+                <li>Neuromorphic Hardware &amp; AI Accelerators</li>
+                <li>3D Packaging &amp; Heterogeneous Integration</li>
+                <li>Hardware Security &amp; Fault Tolerant Design</li>
+              </ul>
             </div>
           </article>
 
-          <!-- Thirumalai Nayakkar Palace -->
-          <article class="kolkata-card" role="listitem" aria-label="Thirumalai Nayakkar Palace, Madurai">
-            <div class="kolkata-card-bg kolkata-howrah" role="img" aria-label="Thirumalai Nayakkar Palace">
+          <!-- Theme 2: Intelligence Signal Processing -->
+          <article class="theme-card" role="listitem" aria-label="Theme 2: Intelligence Signal Processing">
+            <div class="theme-card-image">
               <img
-                src="images/madurai/thirumalai-palace.jpg"
-                alt="Thirumalai Nayakkar Palace"
-                style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
-                onerror="this.src='images/kolkata/howrah-bridge.jpg'"
-                aria-hidden="true"
+                src="images/themes/signal-processing.jpg"
+                alt="Intelligence Signal Processing and AI"
+                onerror="this.style.display='none'"
               >
+              <span class="theme-badge">Theme 02</span>
             </div>
-            <div class="kolkata-card-overlay" aria-hidden="true"></div>
-            <div class="kolkata-card-content">
-              <h3 class="kolkata-card-title">Thirumalai Palace</h3>
-              <p class="kolkata-card-subtitle">Indo-Saracenic Royal Residence · 1636 AD</p>
+            <div class="theme-card-content">
+              <h3 class="theme-card-title">Intelligence Signal Processing</h3>
+              <p class="theme-card-desc">
+                Leveraging artificial intelligence and deep neural representations for acoustic, biomedical, radar, multimedia, and adaptive signal analytics in intelligent edge environments.
+              </p>
+              <ul class="theme-topics-list" aria-label="Signal Processing Highlights">
+                <li>Deep Learning for Audio &amp; Speech Processing</li>
+                <li>Biomedical &amp; Healthcare Signal Analytics</li>
+                <li>Radar, Sonar &amp; Sensor Array Processing</li>
+                <li>Adaptive Filtering &amp; Edge AI Inference</li>
+              </ul>
             </div>
           </article>
 
-          <!-- Vaigai River -->
-          <article class="kolkata-card" role="listitem" aria-label="Vaigai River, Madurai">
-            <div class="kolkata-card-bg kolkata-hooghly" role="img" aria-label="Vaigai River Madurai">
+          <!-- Theme 3: Communication -->
+          <article class="theme-card" role="listitem" aria-label="Theme 3: Next-Generation Communication">
+            <div class="theme-card-image">
               <img
-                src="images/madurai/vaigai-river.jpg"
-                alt="Vaigai River"
-                style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
-                onerror="this.src='images/kolkata/hooghly-river.jpg'"
-                aria-hidden="true"
+                src="images/themes/communication-network.jpg"
+                alt="Next-Generation Communication Networks"
+                onerror="this.style.display='none'"
               >
+              <span class="theme-badge">Theme 03</span>
             </div>
-            <div class="kolkata-card-overlay" aria-hidden="true"></div>
-            <div class="kolkata-card-content">
-              <h3 class="kolkata-card-title">Vaigai River</h3>
-              <p class="kolkata-card-subtitle">Lifeline of the Historic Pandya Kingdom</p>
-            </div>
-          </article>
-
-          <!-- Gandhi Memorial Museum -->
-          <article class="kolkata-card" role="listitem" aria-label="Gandhi Memorial Museum, Madurai">
-            <div class="kolkata-card-bg" style="background: linear-gradient(135deg, #3a1a6b 0%, #6b2d9e 60%, #9e3a6b 100%);" role="img" aria-label="Gandhi Memorial Museum">
-              <img
-                src="images/madurai/gandhi-museum.jpg"
-                alt="Gandhi Memorial Museum"
-                style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
-                onerror="this.src='images/kolkata/science-city.jpg'"
-                aria-hidden="true"
-              >
-            </div>
-            <div class="kolkata-card-overlay" aria-hidden="true"></div>
-            <div class="kolkata-card-content">
-              <h3 class="kolkata-card-title">Gandhi Memorial Museum</h3>
-              <p class="kolkata-card-subtitle">National Peace &amp; Heritage Museum</p>
-            </div>
-          </article>
-
-          <!-- Alagar Kovil & Hills -->
-          <article class="kolkata-card" role="listitem" aria-label="Alagar Kovil & Hills, Madurai">
-            <div class="kolkata-card-bg" style="background: linear-gradient(135deg, #6b3a1a 0%, #c07020 60%, #e8a020 100%);" role="img" aria-label="Alagar Kovil Temple">
-              <img
-                src="images/madurai/alagar-kovil.jpg"
-                alt="Alagar Kovil"
-                style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
-                onerror="this.src='images/kolkata/durga-puja.jpg'"
-                aria-hidden="true"
-              >
-            </div>
-            <div class="kolkata-card-overlay" aria-hidden="true"></div>
-            <div class="kolkata-card-content">
-              <h3 class="kolkata-card-title">Alagar Kovil &amp; Hills</h3>
-              <p class="kolkata-card-subtitle">Scenic Foothills &amp; Ancient Sculptures</p>
+            <div class="theme-card-content">
+              <h3 class="theme-card-title">Next-Generation Communication</h3>
+              <p class="theme-card-desc">
+                Advancing wireless communication frontiers through 5G/6G systems, massive MIMO, IoT infrastructures, satellite connectivity, cognitive radio, and optical network architectures.
+              </p>
+              <ul class="theme-topics-list" aria-label="Communication Highlights">
+                <li>5G/6G Wireless Architecture &amp; Massive MIMO</li>
+                <li>IoT, Sensor Networks &amp; Edge Connectivity</li>
+                <li>Optical, Satellite &amp; Space Communications</li>
+                <li>Quantum Key &amp; Secure Network Protocols</li>
+              </ul>
             </div>
           </article>
 
@@ -751,7 +730,7 @@
           <ul class="footer-links">
             <li><a href="#about">About VISCOM</a></li>
             <li><a href="#cfp">Call for Papers</a></li>
-            <li><a href="#cfp">Conference Themes</a></li>
+            <li><a href="#themes">Conference Themes</a></li>
             <li><a href="#dates">Important Dates</a></li>
             <li><a href="#speakers">Plenary Speakers</a></li>
             <li><a href="#registration">Registration</a></li>
