@@ -883,7 +883,8 @@ ul { list-style: none; }
 
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 480px));
+  justify-content: center;
   gap: 24px;
 }
 
@@ -892,7 +893,10 @@ ul { list-style: none; }
   overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition);
+  max-width: 520px;
+  width: 100%;
 }
 
 .speaker-card:hover {
@@ -902,7 +906,7 @@ ul { list-style: none; }
 
 .speaker-image {
   position: relative;
-  height: 260px;
+  height: 320px;
   overflow: hidden;
   background: linear-gradient(135deg, #1a3a6b, #2d5a9e);
 }
