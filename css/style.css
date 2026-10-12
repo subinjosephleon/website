@@ -486,28 +486,6 @@ ul { list-style: none; }
   justify-content: flex-start;
 }
 
-.hero-scroll {
-  position: absolute;
-  bottom: 32px;
-  right: clamp(20px, 4vw, 60px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255,255,255,0.5);
-  font-family: 'Arial', sans-serif;
-  font-size: var(--text-xs);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.scroll-line {
-  width: 1px;
-  height: 48px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
-}
-
 /* ─── Floating Home Button (FAB) ─── */
 .home-fab {
   position: fixed;
