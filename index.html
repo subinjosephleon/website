@@ -28,13 +28,12 @@
         <!-- Desktop Navigation -->
         <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
           <a href="#" class="active">Home</a>
-          <a href="#about">About</a>
           <a href="#cfp">Call for Papers</a>
-          <a href="#themes">Themes</a>
-          <a href="#dates">Important Dates</a>
           <a href="#speakers">Speakers</a>
-          <a href="#venue">Venue</a>
-          <a href="#contact">Contact</a>
+          <a href="#registration">Registration</a>
+          <a href="#travel">Travel</a>
+          <a href="#accommodation">Accommodation</a>
+          <a href="#places">Places to Visit</a>
         </nav>
 
         <!-- Hamburger toggle (mobile) -->
@@ -72,36 +71,41 @@
       <div class="hero-content">
         <div class="container">
 
-          <span class="hero-eyebrow" aria-label="Conference category">
-            International Academic Conference
-          </span>
+          <!-- Title block with bell-curve font hierarchy -->
+          <div class="hero-title-block">
+            <!-- Line 1: International Conference — 18pt -->
+            <p class="hero-intl-label">International Conference on</p>
 
-          <p class="hero-edition">Organized by Thiagarajar College of Engineering, Madurai</p>
+            <!-- Line 2: Full conference name — 24pt -->
+            <p class="hero-fullname">VLSI, Intelligent Signal Processing and Communication</p>
 
-          <h1 class="hero-title">VISCOM&nbsp;2027</h1>
+            <!-- Line 3: Acronym — 64pt (largest) -->
+            <h1 class="hero-acronym">VISCOM <span class="hero-year-badge">2027</span></h1>
 
-          <p class="hero-subtitle">
-            Themes: VLSI, Intelligent Signal Processing and Communication
-          </p>
+            <!-- Line 4: Venue — 24pt -->
+            <p class="hero-venue-line">Thiagarajar College of Engineering, Madurai</p>
 
-          <div class="hero-meta" role="list">
-            <div class="hero-meta-item" role="listitem">
-              <span class="hero-meta-label">Dates</span>
-              <span class="hero-meta-value">25–27 November 2027</span>
+            <!-- Line 5: Date — 18pt -->
+            <p class="hero-date-line">November 25–27, 2027</p>
+          </div>
+
+          <!-- Publisher Icons -->
+          <div class="hero-publishers" aria-label="Publisher logos">
+            <div class="publisher-badge">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/IEEE_logo.svg/200px-IEEE_logo.svg.png"
+                   alt="IEEE" onerror="this.parentElement.innerHTML='<span class=&quot;pub-text-badge&quot;>IEEE</span>'">
             </div>
-            <div class="hero-meta-item" role="listitem">
-              <span class="hero-meta-label">Venue</span>
-              <span class="hero-meta-value">Thiagarajar College of Engineering, Madurai</span>
+            <div class="publisher-badge">
+              <span class="pub-text-badge">Scopus Indexed</span>
             </div>
-            <div class="hero-meta-item" role="listitem">
-              <span class="hero-meta-label">Proceedings</span>
-              <span class="hero-meta-value">Scopus Indexed / Peer Reviewed</span>
+            <div class="publisher-badge">
+              <span class="pub-text-badge">Peer Reviewed</span>
             </div>
           </div>
 
           <div class="hero-actions">
             <a href="#cfp" class="btn btn-primary">Submit Your Paper</a>
-            <a href="#about" class="btn btn-outline">Learn More</a>
+            <a href="#registration" class="btn btn-outline">Register Now</a>
           </div>
 
         </div>
@@ -113,6 +117,7 @@
       </div>
 
     </section>
+
 
 
     <!-- ================================================
@@ -555,12 +560,8 @@
 
           <!-- Theme 1: VLSI -->
           <article class="theme-card" role="listitem" aria-label="Theme 1: VLSI Systems & Nanotechnology">
-            <div class="theme-card-image">
-              <img
-                src="images/themes/vlsi-chip.jpg"
-                alt="VLSI & Semiconductor Chip Technology"
-                onerror="this.style.display='none'"
-              >
+            <div class="theme-card-header theme-header-vlsi">
+              <span class="theme-icon">⚡</span>
               <span class="theme-badge">Theme 01</span>
             </div>
             <div class="theme-card-content">
@@ -579,12 +580,8 @@
 
           <!-- Theme 2: Intelligent Signal Processing -->
           <article class="theme-card" role="listitem" aria-label="Theme 2: Intelligent Signal Processing">
-            <div class="theme-card-image">
-              <img
-                src="images/themes/signal-processing.jpg"
-                alt="Intelligent Signal Processing and AI"
-                onerror="this.style.display='none'"
-              >
+            <div class="theme-card-header theme-header-isp">
+              <span class="theme-icon">🧠</span>
               <span class="theme-badge">Theme 02</span>
             </div>
             <div class="theme-card-content">
@@ -603,12 +600,8 @@
 
           <!-- Theme 3: Communication -->
           <article class="theme-card" role="listitem" aria-label="Theme 3: Next-Generation Communication">
-            <div class="theme-card-image">
-              <img
-                src="images/themes/communication-network.jpg"
-                alt="Next-Generation Communication Networks"
-                onerror="this.style.display='none'"
-              >
+            <div class="theme-card-header theme-header-comm">
+              <span class="theme-icon">📡</span>
               <span class="theme-badge">Theme 03</span>
             </div>
             <div class="theme-card-content">
@@ -665,7 +658,135 @@
       </div>
     </section>
 
+    <!-- ================================================
+         12. TRAVEL & TRANSPORTATION
+    ================================================ -->
+    <section class="travel-section section-pad" id="travel" aria-labelledby="travel-heading">
+      <div class="container">
+        <header style="text-align:center; margin-bottom: clamp(36px,5vw,60px);">
+          <span class="section-label">Getting Here</span>
+          <h2 class="section-title" id="travel-heading">Travel &amp; <strong>Transportation</strong></h2>
+          <div class="divider" style="margin:16px auto 0;"></div>
+        </header>
+        <div class="info-cards-grid">
+          <div class="info-card">
+            <div class="info-card-icon" style="background:#1a3a6b;">✈️</div>
+            <h3 class="info-card-title">By Air</h3>
+            <p class="info-card-body">Madurai International Airport (IATA: IXM) is approximately 11 km (~20 min) from TCE campus. Direct flights connect from Chennai, Bengaluru, Mumbai, Delhi, and international hubs.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon" style="background:#c0392b;">🚆</div>
+            <h3 class="info-card-title">By Rail</h3>
+            <p class="info-card-body">Madurai Junction Railway Station (MDU) is 8 km from campus. Well-connected by express and superfast trains from all major cities across South India.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon" style="background:#2d5a9e;">🚌</div>
+            <h3 class="info-card-title">By Road</h3>
+            <p class="info-card-body">Madurai is connected by NH 38, NH 44 and NH 85. TCE is on Thiruparankundram Road, accessible by city bus, auto-rickshaw, and cab aggregators (Ola/Uber).</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon" style="background:#e8a020;">🗺️</div>
+            <h3 class="info-card-title">Conference Shuttle</h3>
+            <p class="info-card-body">Complimentary shuttle service between select hotels and TCE campus on all three conference days (November 25–27, 2027). Schedule shared post-registration.</p>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:32px;">
+          <a href="https://maps.google.com/?q=Thiagarajar+College+of+Engineering+Madurai" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">Open in Google Maps →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         13. ACCOMMODATION
+    ================================================ -->
+    <section class="accom-section section-pad" id="accommodation" aria-labelledby="accom-heading">
+      <div class="container">
+        <header style="text-align:center; margin-bottom: clamp(36px,5vw,60px);">
+          <span class="section-label">Where to Stay</span>
+          <h2 class="section-title" id="accom-heading">Accommodation <strong>Options</strong></h2>
+          <div class="divider" style="margin:16px auto 0;"></div>
+        </header>
+        <div class="accom-grid">
+          <div class="accom-card accom-campus">
+            <div class="accom-badge">On Campus</div>
+            <h3 class="accom-title">TCE Guest House</h3>
+            <p class="accom-body">Limited rooms available on the TCE campus for outstation delegates. Early booking recommended. Priority given to keynote speakers and session chairs.</p>
+            <p class="accom-note">📧 Contact: viscom2027@tce.edu for campus accommodation requests.</p>
+          </div>
+          <div class="accom-card">
+            <div class="accom-badge accom-badge-blue">Partner Hotels</div>
+            <h3 class="accom-title">Hotels in Madurai City</h3>
+            <p class="accom-body">We have partnered with select hotels offering preferential conference rates. Details and booking links will be shared upon registration confirmation.</p>
+            <ul style="margin-top:12px; font-family:'Arial',sans-serif; font-size:var(--text-sm); color:var(--text-light); display:flex; flex-direction:column; gap:6px; padding-left:16px; list-style:disc;">
+              <li>Hotels near Madurai city centre (~8 km)</li>
+              <li>Thiruparankundram area hotels (~1–2 km)</li>
+              <li>Budget guesthouses near campus</li>
+            </ul>
+          </div>
+          <div class="accom-card">
+            <div class="accom-badge accom-badge-gold">Budget Stays</div>
+            <h3 class="accom-title">Nearby Lodges &amp; Stays</h3>
+            <p class="accom-body">Several affordable lodges and homestays available in the Thiruparankundram and Madurai city areas via MakeMyTrip, OYO, and Booking.com.</p>
+            <p class="accom-note">💡 Book early — Madurai hotels fill up fast in November.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         14. PLACES TO VISIT
+    ================================================ -->
+    <section class="places-section section-pad" id="places" aria-labelledby="places-heading">
+      <div class="container">
+        <header style="text-align:center; margin-bottom: clamp(36px,5vw,60px);">
+          <span class="section-label">Explore Madurai</span>
+          <h2 class="section-title" id="places-heading">Places <strong>to Visit</strong></h2>
+          <div class="divider" style="margin:16px auto 0;"></div>
+          <p class="section-lead" style="margin:16px auto 0; text-align:center; max-width:680px;">
+            Madurai — "Athens of the East" — one of India's oldest living cities. Discover magnificent temples, vibrant bazaars, and rich heritage.
+          </p>
+        </header>
+        <div class="places-grid">
+          <div class="place-card">
+            <div class="place-icon">🛕</div>
+            <h3 class="place-name">Meenakshi Amman Temple</h3>
+            <p class="place-desc">One of India's grandest ancient temples with towering sculptured gopurams and a 2,500-year-old heritage. Located in the heart of Madurai city (~10 km from TCE).</p>
+          </div>
+          <div class="place-card">
+            <div class="place-icon">⛰️</div>
+            <h3 class="place-name">Thiruparankundram Murugan Temple</h3>
+            <p class="place-desc">One of the six abodes of Lord Murugan, carved into a granite hill, just 1 km from TCE campus — ideal for a morning visit during the conference.</p>
+          </div>
+          <div class="place-card">
+            <div class="place-icon">🏛️</div>
+            <h3 class="place-name">Thirumalai Nayakar Mahal</h3>
+            <p class="place-desc">A stunning 17th-century Indo-Saracenic palace showcasing Dravidian and Italian architecture with the magnificent Swarga Vilasam.</p>
+          </div>
+          <div class="place-card">
+            <div class="place-icon">🏛️</div>
+            <h3 class="place-name">Gandhi Museum</h3>
+            <p class="place-desc">Housed in the historic Tamukkam Palace, the Gandhi Museum displays rare artefacts and photographs from the Indian independence movement.</p>
+          </div>
+          <div class="place-card">
+            <div class="place-icon">🎨</div>
+            <h3 class="place-name">Koodal Azhagar Temple</h3>
+            <p class="place-desc">A majestic Vishnu temple with three-storey Dravidian architecture and intricate stone carvings, near the Madurai railway station.</p>
+          </div>
+          <div class="place-card">
+            <div class="place-icon">🛍️</div>
+            <h3 class="place-name">Puthu Mandapam &amp; Bazaars</h3>
+            <p class="place-desc">Vibrant street bazaars opposite Meenakshi Temple — famous for silk sarees, handicrafts, jasmine flowers (Madurai Malli), and authentic South Indian street food.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Floating Home Button (bottom-right) -->
+  <a href="#" class="home-fab" aria-label="Back to Home" title="Back to Top / Home">
+    🏠
+  </a>
 
 
   <!-- ================================================
