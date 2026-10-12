@@ -298,32 +298,27 @@ ul { list-style: none; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(135deg, #0a1c3e 0%, #1a3a6b 40%, #2d5a9e 70%, #1a3a6b 100%);
+  background-image: url('../images/hero/tce-campus-sketch.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
-/* Hand-sketched TCE campus background overlay */
+/* Dark tint overlay — lets the sketch show through */
 .hero-bg::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('images/venue/tce-campus.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.10;
-  filter: grayscale(100%) contrast(1.4);
+  background: rgba(5, 12, 30, 0.82);
 }
 
-/* Subtle circuit/tech pattern */
+/* Subtle colour accent overlay */
 .hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 30% 50%, rgba(192,57,43,0.15) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 20%, rgba(44,82,130,0.35) 0%, transparent 50%);
+    radial-gradient(ellipse at 30% 70%, rgba(192,57,43,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 20%, rgba(26,58,107,0.35) 0%, transparent 50%);
 }
 
 .hero-overlay {
