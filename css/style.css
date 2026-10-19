@@ -489,7 +489,7 @@ ul { list-style: none; }
 /* ─── Floating Home Button (FAB) ─── */
 .home-fab {
   position: fixed;
-  bottom: 32px;
+  bottom: 68px;
   right: 32px;
   z-index: 9999;
   width: 56px;
@@ -1853,7 +1853,7 @@ ul { list-style: none; }
   .accom-grid { grid-template-columns: 1fr; }
   .places-grid { grid-template-columns: 1fr 1fr; }
 
-  .home-fab { bottom: 20px; right: 20px; width: 48px; height: 48px; font-size: 1.2rem; }
+  .home-fab { bottom: 54px; right: 16px; width: 44px; height: 44px; font-size: 1.1rem; }
 }
 
 /* Mobile — max 480px */
@@ -1897,4 +1897,463 @@ ul { list-style: none; }
   .info-cards-grid { grid-template-columns: 1fr; }
   .accom-grid { grid-template-columns: 1fr; }
   .places-grid { grid-template-columns: 1fr; }
+  .program-grid { grid-template-columns: 1fr; }
+  .hackathon-subgrid { grid-template-columns: 1fr; }
+  .patrons-grid { grid-template-columns: 1fr; }
+  .committees-grid { grid-template-columns: 1fr; }
+  .contact-layout-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   PROGRAM SECTION
+   ============================================= */
+.program-section {
+  background: var(--surface);
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.program-card {
+  background: var(--surface-alt);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 32px 28px;
+  position: relative;
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.program-card-wide {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(26, 58, 107, 0.04) 0%, rgba(240, 237, 232, 0.9) 100%);
+  border-top: 4px solid var(--accent);
+}
+
+.program-card-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  background: rgba(26, 58, 107, 0.08);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.program-card-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.program-card-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.program-card-desc {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 18px;
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--text);
+  list-style: disc;
+}
+
+.program-list li strong {
+  color: var(--accent);
+}
+
+.hackathon-subgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.hack-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.hack-item h4 {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.hack-item p {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =============================================
+   COMMITTEES SECTION (All 29 Committees)
+   ============================================= */
+.committees-section {
+  background: var(--surface-alt);
+}
+
+.patrons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.patron-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.patron-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.patron-card.patron-chief {
+  border-top-color: var(--accent-3);
+}
+
+.committee-role-badge {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  background: rgba(26, 58, 107, 0.08);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+}
+
+.patron-name {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.patron-desc {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin: 0;
+}
+
+.committees-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.committee-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.committee-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(26, 58, 107, 0.35);
+}
+
+.committee-num {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.committee-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.committee-members {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.comm-label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.committee-members ul {
+  padding-left: 16px;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text-light);
+}
+
+.committee-role-desc {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.committee-role-desc strong {
+  color: var(--text);
+}
+
+/* =============================================
+   CONTACT US SECTION
+   ============================================= */
+.contact-section {
+  background: var(--surface);
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+
+.contact-card-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.contact-card-content h4 {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.contact-card-content p {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-card-content a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.contact-form-box {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-sm);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+}
+
+/* =============================================
+   CONTINUOUS SCROLLING NOTIFICATION TICKER
+   ============================================= */
+.notification-ticker-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  height: 44px;
+  background: #08142a;
+  border-top: 2px solid var(--accent-3);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.ticker-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-2, #c0392b);
+  color: #fff;
+  height: 100%;
+  padding: 0 16px;
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  z-index: 2;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+}
+
+.ticker-pulse {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.ticker-track-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 40px;
+  white-space: nowrap;
+  will-change: transform;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.notification-ticker-bar:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.02em;
+}
+
+.ticker-item strong {
+  color: var(--accent-3);
+}
+
+.ticker-item a {
+  color: #fff;
+  text-decoration: underline;
 }
